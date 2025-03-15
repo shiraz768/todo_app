@@ -51,20 +51,21 @@ const FilterButton = ({ setFilter, setSearch }) => {
                 <select 
                     value={filter} 
                     onChange={handleFilterChange} 
-                    className="p-2 border rounded mb-2 sm:mb-0 sm:mr-2 "
+                    className="py-1.5 px-2 border rounded mb-2 bg-black hover:bg-slate-800 text-white sm:mb-0 sm:mr-2"
                 >
-                    <option value="ALL">DEFAULT</option>
-                    <option value="COMPLETED">COMPLETED</option>
-                    <option value="INCOMPLETE">INCOMPLETE</option>
+                    <option value="ALL">Default</option>
+                    <option value="COMPLETED">Complete</option>
+                    <option value="INCOMPLETE">Incomplete</option>
+                
                 </select>
                 <button 
-                    className="bg-black text-white rounded mb-2 sm:mb-0 sm:mr-2 px-2 py-1  hover:text-slate-200 hover:bg-sky-700" 
+                    className="bg-black text-white rounded mb-2 sm:mb-0 sm:mr-2 px-2 py-1  hover:text-slate-200 hover:bg-slate-800" 
                     onClick={markAllCompleted}
                 >
                     Mark All Completed
                 </button>
                 <button 
-                    className="bg-black text-white rounded mb-2 sm:mb-0 px-2 py-1 hover:text-slate-200 hover:bg-sky-700" 
+                    className="bg-black text-white rounded mb-2 sm:mb-0 px-2 py-1 hover:text-slate-200 hover:bg-slate-800" 
                     onClick={markAllIncomplete}
                 >
                     Mark All Incomplete

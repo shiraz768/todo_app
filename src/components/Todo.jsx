@@ -65,6 +65,7 @@ const Todo = () => {
 
     return (
         <div className="w-5/6 mx-auto  p-4 border-t-2  border-t-slate-800">
+            <p className="text-center text-5xl font-bold italic text-slate-700">Todo List</p>
             <div className="flex">
                 <input
                     type="text"
